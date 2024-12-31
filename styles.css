@@ -1,0 +1,175 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #599fb6; 
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background: linear-gradient(to bottom, #87CEEB, #ffffff); /* Sky blue mixed with white */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #fff; 
+    font-size: 24px;
+    text-decoration: underline; 
+}
+
+/* Heading Inside Sections */
+h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #333; 
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline; 
+}
+
+
+.focus-message {
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-top: 4px;
+}
+
+
+#full-name:focus + #full-name-message {
+    display: block;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.form-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.section {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 12px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #87CEEB, #ffffff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:active {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+
+input#state,
+input#country {
+    border: 2px dashed red;
+    background-color: #fdf1f1;
+    font-weight: bold;
+    color: #333; 
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+input:focus{
+    background-color:rgb(127, 177, 27);
+    color: black;
+}
+
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+button {
+    background-color: #f39c12; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #52a009; 
+}
+
+img.valid,img.invalid{
+    display:none;
+}
+
+input[type="email"]:focus:valid~img.valid{
+    display:inline;
+    height: 15px;
+    width:15px;
+}
+input[type="email"]:focus:invalid~img.invalid{
+    display:inline;
+    height: 15px;
+    width:15px;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                 
+
+
